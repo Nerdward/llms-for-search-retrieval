@@ -2,8 +2,8 @@ from pydantic import BaseModel
 
 class ConversationRequest(BaseModel):
     message: str
-    max_tokens: int = 100
-    temperature: float = 0.9
+    max_tokens: int = 256
+    temperature: float = 0
     top_p: float = 1
     frequency_penalty: float = 0
     presence_penalty: float = 0
