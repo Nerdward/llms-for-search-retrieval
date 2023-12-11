@@ -13,4 +13,3 @@ class ConversationRequest(BaseModel):
 
 class ConversationResponse(BaseModel):
     text: str
-    conversation_id: str

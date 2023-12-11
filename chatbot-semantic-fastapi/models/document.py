@@ -11,14 +11,13 @@ class DocumentInputResponse(BaseModel):
 
 class DocumentRetrieveRequest(BaseModel):
     query: str
-    re_ranking_strategy: str
     num_results: int
 
 class DocumentResponse(BaseModel):
     text: str
     date_uploaded: datetime
     score: float
-    id: str
+    id: int
 
 class DocumentRetrieveResponse(BaseModel):
-    document = List[DocumentResponse]
+    document: list[DocumentResponse]

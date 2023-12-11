@@ -8,7 +8,7 @@ class ChatbotGPT:
         self.prompt = prompt
         self.llm = ChatOpenAI(model=self.model,
                          temperature= self.temperature,
-                         max_tokens=256
+                         max_tokens=max_tokens
                          )
 
     def load_chain(self, llm, prompt: str,chain_type: str = "stuff", verbose: bool = True, document_variable_name: str = "sources"):
